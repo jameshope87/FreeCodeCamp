@@ -1,0 +1,43 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.3)
+}
+
+.bg-overlay {
+  background:rgba(0,0,0, 0.3);
+  height: 1000px;
+  margin-top: -50px;
+}
+
+.about-container {
+  background: url('resources/abtbgnd.jpg') no-repeat center fixed;
+  height: 1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+}
+
+.portfolio-container {
+  background: url('resources/portfoliobgnd.jpg') no-repeat center fixed;
+  height: 1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+}
+
+.home-container {
+  background: url('resources/homebgnd.jpg') no-repeat center fixed;
+  height: 1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+}
+
+.contact-container {
+  background: url('resources/contbgnd.jpg') no-repeat center fixed;
+  height: 1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+}
