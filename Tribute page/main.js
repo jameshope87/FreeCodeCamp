@@ -1,11 +1,13 @@
 $(document).ready(function carouselNormalization() {
-  var items = $("#tributecarousel .item"), //grab all slides
+  var items = $("#tributecarousel .image"), //grab all slides
     heights = [], //create empty array to store height values
     shortest; //create variable to make note of the tallest slide
   console.log(heights);
+  
   if (items.length) {
     function normalizeHeights() {
       items.each(function() {
+        console.log($(this).height())
         //add heights to array
         heights.push($(this).height());
       });
@@ -14,7 +16,6 @@ $(document).ready(function carouselNormalization() {
         $(this).css("max-height", shortest + "px");
       });
     }
-    normalizeHeights();
     console.log(heights);
     console.log(shortest);
     $(window).on("resize orientationchange", function() {
