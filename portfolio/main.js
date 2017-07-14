@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 // Highlight the active nav item
-$(".nav a").on("click", function(){
+/*$(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
-});
+});*/
 
 $('body').scrollspy({target: '.navbar-fixed-top'})
 
@@ -16,4 +16,9 @@ $(function() {$('body').on('click', 'a.scrollable', function(event) {
   });
 });
 
+});
+$(document).on('click','.navbar-collapse.in',function(e) {
+  if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    $(this).collapse('hide');
+  }
 });
