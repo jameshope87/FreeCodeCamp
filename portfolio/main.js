@@ -11,7 +11,7 @@ $('body').scrollspy({target: '.navbar-fixed-top'})
 // JQuery for scrolling page links
 $(function() {$('body').on('click', 'a.scrollable', function(event) {
   var $anchor = $(this);
-  $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
+  $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},700,'easeInOutQuart');
   event.preventDefault();
   });
 });
